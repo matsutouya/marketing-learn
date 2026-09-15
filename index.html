@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>止まる|書いて売る技法辞典</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f5f6f8; --panel:#ffffff; --ink:#16213d; --ink-2:#40506f; --muted:#6b7793;
+  --line:#dde1e9; --line-2:#eceff4; --accent:#2b6fc0; --accent-2:#a8482a; --grid:#e3e7ee;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#11151f; --panel:#171d2a; --ink:#e8ecf5; --ink-2:#b9c3d6; --muted:#8d99b3;
+    --line:#2a3244; --line-2:#212938; --accent:#5b9bea; --accent-2:#d4744c; --grid:#28303f;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#11151f; --panel:#171d2a; --ink:#e8ecf5; --ink-2:#b9c3d6; --muted:#8d99b3;
+  --line:#2a3244; --line-2:#212938; --accent:#5b9bea; --accent-2:#d4744c; --grid:#28303f;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+  font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:0 28px}
+.wrap-narrow{max-width:660px;margin:0 auto}
+h1,h2{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:600;text-wrap:balance;letter-spacing:.01em}
+h1{font-size:clamp(28px,4.2vw,40px);line-height:1.35;margin:.3em 0 .35em}
+h2{font-size:clamp(21px,2.6vw,27px);margin:0 0 .55em;padding-bottom:.4em;border-bottom:1px solid var(--line)}
+p{margin:0 0 1.15em;color:var(--ink-2)}
+strong{color:var(--ink);font-weight:600}
+.masthead{background:var(--panel);border-bottom:1px solid var(--line);padding:52px 0 34px}
+.eyebrow{font-size:12.5px;letter-spacing:.16em;color:var(--muted);margin:0}
+.hint{font-size:12px;color:var(--muted);margin:6px 0 0}
+.lede{max-width:62ch;font-size:16.5px}
+h3{font-size:17px;margin:28px 0 4px;font-family:"Shippori Mincho",serif;font-weight:600}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.status{font-size:13.5px;color:var(--muted);margin:0 0 18px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.status .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;flex:none}
+nav.tabs{display:flex;gap:24px;margin:0 0 22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav.tabs a{padding:0 2px 9px;color:var(--muted);font-size:14.5px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.tabs a:hover{color:var(--ink);border-bottom-color:var(--line)}
+nav.tabs a.on{color:var(--ink);font-weight:600;border-bottom-color:var(--accent-2)}
+nav.tabs a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+main{padding:8px 0 60px}
+section{margin:52px 0}
+.note{font-size:14.5px;color:var(--muted);margin:.7em 0 1.3em}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:9px 13px;text-align:left;border-bottom:1px solid var(--line-2)}
+thead th{font-size:12.5px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--line);background:var(--panel)}
+tbody th{font-weight:600;color:var(--ink)}
+td{color:var(--ink-2)}
+.n{text-align:right;font-variant-numeric:tabular-nums}
+.words{white-space:normal;min-width:190px}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
+th[data-sort]{cursor:pointer;user-select:none;position:relative;padding-right:20px}
+th[data-sort]:hover{color:var(--ink)}
+th[data-sort]::after{content:"↕";position:absolute;right:7px;opacity:.35;font-size:11px}
+th[data-sort][data-dir=desc]::after{content:"↓";opacity:1;color:var(--accent)}
+th[data-sort][data-dir=asc]::after{content:"↑";opacity:1;color:var(--accent)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);max-width:660px;margin-inline:auto}
+footer p{color:var(--muted);margin:0}
+.chap{margin:34px 0}
+.chap h3{margin:18px 0 6px;font-size:15px}
+.chap .terms{margin:4px 0 10px}
+.chap .term{display:inline-block;margin:0 6px 6px 0;padding:1px 9px;border-radius:10px;font-size:12px;border:1px solid var(--line);color:var(--ink-2)}
+.chap .idea{line-height:1.9}
+.chap .nums{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 16px}
+.chap .nums p{margin:6px 0;line-height:1.8}
+.chap .nums ul,.chap .nums ol{margin:8px 0;padding-left:1.2em;color:var(--ink-2)}
+.chap .nums li{margin:4px 0;line-height:1.7}
+.chap .doit{border-left:3px solid var(--line);padding:2px 12px;margin:0 0 .7em}
+.toc ol{line-height:2}
+.toc a{text-decoration:none}
+.glos th,.glos td{white-space:normal;vertical-align:top;line-height:1.7}
+.glos th:nth-child(1){width:22%}
+.glos th:nth-child(2){width:26%}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  nav.tabs{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+</style>
+</head>
+<body>
+<header class="masthead"><div class="wrap">
+<nav class="tabs" aria-label="章の切り替え"><a href="index.html" class="on" aria-current="page">止まる</a><a href="trust.html">信じる</a><a href="act.html">動く</a><a href="sell.html">売る道</a><a href="channel.html">媒体別</a><a href="glossary.html">用語集</a></nav>
+<p class="eyebrow">サロン教材　note・X・Threads</p>
+<h1>止まる</h1>
+<p class="status"><span class="dot" aria-hidden="true"></span>最終更新 2026-09-16　/　静的な教材です。数字は入れ替わりません</p>
+<p class="lede">流れていく画面で読んでもらうには、最初の一言で手を止めさせる必要があります。このタブではフックと自分ごと化と続きが気になる並べ方を、実際に伸びた題で見ます。</p>
+</div></header>
+<main class="wrap">
+<section class="toc"><div class="wrap-narrow"><h2>目次</h2><ol><li><a href="#c1-最初の一言で目を止めてもらう">最初の一言で目を止めてもらう</a></li><li><a href="#c2-タイトルと1行目の型">タイトルと1行目の型</a></li></ol></div></section>
+<section class="chap" id="c1-最初の一言で目を止めてもらう"><div class="wrap-narrow"><h2>1. 最初の一言で目を止めてもらう</h2><p class="terms"><span class="term">フック（つかみ・引き）</span><span class="term">自己関連付け効果（自分ごと化）</span><span class="term">ツァイガルニク効果（続きが気になる心理・未完了の効果）</span><span class="term">伏せ字（〇〇だけ・答えを後に置く）</span></p><h3>考え方</h3><p class="idea">流れていく画面の中で読んでもらうには、<strong>最初の一言で手を止めさせる</strong>必要があります。この仕掛けをフックと呼びます。</p>
+<p class="idea">人は、自分に関係があると感じた話を強く覚えます。これを自己関連付け効果と呼びます。「〜な人へ」という書き出しが当たります。</p>
+<p class="idea">答えが最後まで見えないと、続きが気になり続けます。これをツァイガルニク効果と呼びます。題の「たった〇〇だけ」は、答えを伏せて続きを読ませる形です。</p>
+<p class="idea">引っかかりは予告文で足しません。「この記事で全部わかります」は予告であってフックではありません。事実と未回収の問いを、同じ1行の中に置きます。</p><h3>世の中での使われ方</h3><div class="nums"><p>2026-09-15に集めたXの記事24本では、題の型でいいねの中央値が分かれました。数字はいいね数です。保存はブックマーク数です。</p>
+<div class="tablewrap"><table class=""><thead><tr><th class="" data-sort="1" aria-sort="none" tabindex="0">型</th><th class="n" data-sort="1" aria-sort="none" tabindex="0">本数</th><th class="n" data-sort="1" aria-sort="none" tabindex="0">いいね中央値</th><th class="" data-sort="1" aria-sort="none" tabindex="0">題の例</th></tr></thead><tbody><tr><td class="words">敷居を下げるラベル型</td><td class="n">4</td><td class="n">749</td><td class="words">【小学生でもわかる】Claude Fable 5超初心者向け完全ガイド</td></tr><tr><td class="words">伏せ字型</td><td class="n">2</td><td class="n">261</td><td class="words">Anthropic公式が推奨するプロンプトは、たった〇〇だけでした</td></tr><tr><td class="words">方法型</td><td class="n">2</td><td class="n">135</td><td class="words">動くLINEスタンプを90円で作る方法</td></tr><tr><td class="words">配布型</td><td class="n">5</td><td class="n">108</td><td class="words">【天才マーケターのナレッジ配布】Claude Code×ChatGPTライティング完全版</td></tr><tr><td class="words">実額型</td><td class="n">5</td><td class="n">61</td><td class="words">SNS未経験の初心者が、AI×noteだけで年1,000万円稼いだ方法</td></tr></tbody></table></div><p class="hint">見出しをクリックすると並べ替えできます。</p>
+<p>敷居を下げるラベル型の中央値749は、次の伏せ字型の約3倍です。1位の題はいいね1,582、保存2,651でした。保存がいいねの1.7倍で、押すより先に取っておく動きです。</p>
+<p>伏せ字型の上位は「Anthropic公式が〜たった〇〇だけ」で、いいね398、保存1,326です。公式という権威のあとで答えを伏せています。同じ伏せ字でも「今すぐ〇〇をやってみて」は表示25万回に対していいね123で、権威が前に無いと止まりにくくなります。</p>
+<p>実額型は中央値61で、この24本では下の帯です。同じ実額でも「SNS未経験の初心者が、AI×noteだけで年1,000万円」は131まで残ります。誰が・何だけで・いくらの3点が1文にそろっているからです。実額だけの「最短で年収1,000万円」は98です。「僕が教えた主婦が1撃200万」は55で、書き手の自慢になると読者の話ではなくなります。</p></div><h3>やってみるなら</h3><p class="doit">noteの題は、読む人が「自分のことだ」と感じる属性を1つだけ置きます。未経験・スマホだけ・開設1週間以内、のどれかです。</p>
+<p class="doit">Xの1行目は、出たばかりの製品名に「始め方ガイド」を付けます。保存させたいときは「完全ガイド」か「大全」を題に入れます。</p>
+<p class="doit">Threadsでは100字から299字に収め、答えや順位は最後に置きます。</p><h3>気をつけること</h3><p class="note">不安をあおりすぎる書き方は、通報や離れる人を増やします。読んだあとに少し前向きになれる終わり方にしてください。</p>
+<p class="note">回収できない煽りは書きません。本文が支えられない金額や、再現できない特殊事例は題に置かないでください。</p>
+<p class="note">数字は1つだけ大きく出します。成果か規模のどちらかです。内訳や工程数を並べると、どこを見ればよいか分からなくなります。</p></div></section><section class="chap" id="c2-タイトルと1行目の型"><div class="wrap-narrow"><h2>2. タイトルと1行目の型</h2><p class="terms"><span class="term">本当の理由型</span><span class="term">逆張り型</span><span class="term">損失回避型</span><span class="term">数字断定型</span><span class="term">変身型</span><span class="term">属性ゼロ起点型</span><span class="term">自分ごと化型</span><span class="term">全手順型</span><span class="term">対比まとめ型</span><span class="term">データ権威型</span></p><h3>考え方</h3><p class="idea">掴みと具体はセットで成立します。欲や不安で掴んだら、本文は手順と数字と実物で回収します。回収できない煽りは書きません。</p>
+<p class="idea">引っかかりは文言の中の落差で作ります。「48時間で再生が止まる本当の理由」は、事実の提示と未回収の問いが1行にそろっています。</p>
+<p class="idea">同じ型でも、載せる語彙は発信の強さで変えます。稼ぐ系は金額と簡単さです。分析系は伸びる理由とデータの話です。法人向けは減った時間と件数です。</p><h3>世の中での使われ方</h3><div class="nums"><p>手元の型ライブラリにある一軍10型です。構文と実例は、売れnoteの題と伸びたX投稿からまとめたものです。</p>
+<div class="tablewrap"><table class=""><thead><tr><th class="" data-sort="1" aria-sort="none" tabindex="0">型</th><th class="" data-sort="1" aria-sort="none" tabindex="0">構文</th><th class="" data-sort="1" aria-sort="none" tabindex="0">実例</th></tr></thead><tbody><tr><td class="words">本当の理由型</td><td class="words">◯◯の本当の理由／なぜ◯◯なのか</td><td class="words">48時間で再生が止まる本当の理由</td></tr><tr><td class="words">逆張り型</td><td class="words">◯◯はもう古い／◯◯は嘘です</td><td class="words">noteは書けば伸びる、は嘘です</td></tr><tr><td class="words">損失回避型</td><td class="words">やってはいけない◯◯／◯◯で消える話</td><td class="words">初心者がやりがちな失敗5選</td></tr><tr><td class="words">数字断定型</td><td class="words">たった◯ヶ月で◯◯／◯◯が月◯◯を生んでいる</td><td class="words">フォロワーゼロから1ヶ月で56万円売った</td></tr><tr><td class="words">変身型</td><td class="words">◯◯だった私が△△になるまで</td><td class="words">月500円→3万円。収益が変わった理由</td></tr><tr><td class="words">属性ゼロ起点型</td><td class="words">顔出しゼロ×スキル0から◯◯</td><td class="words">顔出しゼロ・声出し不要で収益化の全手順</td></tr><tr><td class="words">自分ごと化型</td><td class="words">◯◯の人だけ読んでほしい</td><td class="words">note開設1週間以内の人だけ読んでほしい</td></tr><tr><td class="words">全手順型</td><td class="words">◯◯の全手順／全貌／教科書</td><td class="words">収益化の全手順</td></tr><tr><td class="words">対比まとめ型</td><td class="words">◯◯ってどれがいいの?とよく聞かれるのでまとめた</td><td class="words">AIツールどれ使えばいいの?をまとめた</td></tr><tr><td class="words">データ権威型</td><td class="words">データで判明した◯◯</td><td class="words">データで判明・売れる価格と分量</td></tr></tbody></table></div><p class="hint">見出しをクリックすると並べ替えできます。</p>
+<p>Xの500いいね以上でよく見る構文も、上の型と重なります。番号付きのリストは全手順型です。「後で消すかもしれない」は損失回避型です。「〇〇な人だけ見てください」は自分ごと化型です。</p>
+<p>保存がいいねの2倍を超えたX記事は、題に「完全ガイド」「大全」「完全版」「公式の推奨」のどれかを持っていました。読者は押すより先に取っておくので、網羅感のある語が残ります。</p></div><h3>やってみるなら</h3><p class="doit">記事の結論から型を1つ選びます。理由を明かす記事なら本当の理由型です。体験談なら変身型です。</p>
+<p class="doit">成果か規模の数字を1つだけ入れます。月の売上か、かかった日数か、原価か、のどれかです。</p>
+<p class="doit">稼ぐ系なら過去形の断定にします。「月10万を生んでいる」は、すでに起きた報告に見えます。分析系なら「データで判明」を主語にします。法人向けなら「月20時間減った」のように業務の景色を書きます。</p><h3>気をつけること</h3><p class="note">中身のない網羅アピールは、サムネと本文では使いません。「徹底解説」「知らないと損」は、記事タイトルでは使えることがあります。本文の見出しでは使わないでください。</p>
+<p class="note">予告文で引っかかりを作らないでください。「この記事でわかります」「3つ目が本命です」は予告です。</p>
+<p class="note">使い古された定型は流されます。「断言しますが」「実は」を単体で置かないでください。</p></div></section>
+<footer><p>リンクを知っている人向けのサロン教材です。検索には出ません。</p></footer>
+</main>
+
+<script>
+document.querySelectorAll("th[data-sort]").forEach(function(th){
+  th.addEventListener("click", function(){
+    var table = th.closest("table");
+    var idx = Array.prototype.indexOf.call(th.parentNode.children, th);
+    var dir = th.getAttribute("data-dir") === "asc" ? "desc" : "asc";
+    table.querySelectorAll("th[data-sort]").forEach(function(x){
+      x.removeAttribute("data-dir");
+      x.setAttribute("aria-sort","none");
+    });
+    th.setAttribute("data-dir", dir);
+    th.setAttribute("aria-sort", dir === "asc" ? "ascending" : "descending");
+    var rows = Array.prototype.slice.call(table.tBodies[0].rows);
+    rows.sort(function(a,b){
+      var av = a.cells[idx].innerText.trim();
+      var bv = b.cells[idx].innerText.trim();
+      var an = av.replace(/[,％%]/g,"");
+      var bn = bv.replace(/[,％%]/g,"");
+      var na = parseFloat(an), nb = parseFloat(bn);
+      var cmp = (!isNaN(na) && !isNaN(nb)) ? na - nb : av.localeCompare(bv, "ja");
+      return dir === "asc" ? cmp : -cmp;
+    });
+    rows.forEach(function(r){ table.tBodies[0].appendChild(r); });
+  });
+});
+</script>
+
+</body>
+</html>
