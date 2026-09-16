@@ -88,9 +88,34 @@ figure.shot img{display:block;width:100%;height:auto;border:1px solid var(--line
 .glos th,.glos td{white-space:normal;vertical-align:top;line-height:1.7}
 .glos th:nth-child(1){width:22%}
 .glos th:nth-child(2){width:26%}
+.cat-bar{position:sticky;top:0;z-index:5;background:var(--paper);padding:18px 0 14px;margin:0 0 36px;border-bottom:1px solid var(--line)}
+.cat-bar .wrap-narrow{max-width:740px}
+.cat-count{margin:0 0 14px;font-size:15px}
+.cat-count strong{font-size:22px}
+.cat-bar input[type=search]{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);margin:0 0 14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:inherit;font-size:14px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink-2);cursor:pointer}
+.chips button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.cat-sec{margin:0 0 48px}
+.cat-sec h2{display:flex;align-items:baseline;gap:12px}
+.cat-n{font-family:"Zen Kaku Gothic New",sans-serif;font-size:15px;color:var(--muted);font-weight:500}
+details.type{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0;margin:0 0 14px}
+details.type summary{list-style:none;cursor:pointer;padding:20px 22px 18px}
+details.type summary::-webkit-details-marker{display:none}
+.type-name{display:block;font-family:"Shippori Mincho",serif;font-size:20px;font-weight:600;color:var(--ink);margin:0 0 8px}
+.type-hook{display:block;color:var(--ink-2);margin:0 0 8px;line-height:1.8}
+.type-meta{display:block;font-size:13.5px;color:var(--muted)}
+.type-body{padding:0 22px 22px;border-top:1px solid var(--line-2)}
+.type-body p{margin:1.1em 0}
+.type-body .shot{margin:1em 0 1.4em}
+.ex{list-style:none;padding:0;margin:1.2em 0 0}
+.ex li{margin:0 0 1em;padding:14px 16px;background:var(--paper);border-radius:8px;line-height:1.85}
+.ex .where{font-size:12.5px;color:var(--muted);margin-right:8px}
+.ex .nums{font-variant-numeric:tabular-nums;color:var(--ink)}
 @media (max-width:640px){
   .wrap{padding:0 18px}
   nav.tabs{gap:14px}
+  .type-name{font-size:18px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
@@ -98,7 +123,7 @@ figure.shot img{display:block;width:100%;height:auto;border:1px solid var(--line
 </head>
 <body>
 <header class="masthead"><div class="wrap">
-<nav class="tabs" aria-label="章の切り替え"><a href="index.html">題と1行目</a><a href="layout.html">投稿の置き方</a><a href="trust.html">信頼の見せ方</a><a href="act.html" class="on" aria-current="page">保存と購入</a><a href="sell.html">商品の並べ方</a><a href="channel.html">note・X・Threads</a><a href="glossary.html">用語集</a></nav>
+<nav class="tabs" aria-label="章の切り替え"><a href="index.html">題と1行目</a><a href="layout.html">投稿の置き方</a><a href="types.html">型の一覧</a><a href="trust.html">信頼の見せ方</a><a href="act.html" class="on" aria-current="page">保存と購入</a><a href="sell.html">商品の並べ方</a><a href="channel.html">note・X・Threads</a><a href="glossary.html">用語集</a></nav>
 <p class="eyebrow">サロン教材　note・X・Threads</p>
 <h1>保存と購入</h1>
 <p class="status"><span class="dot" aria-hidden="true"></span>最終更新 2026-09-16　/　静的な教材です。数字は入れ替わりません</p>
