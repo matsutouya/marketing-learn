@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="800" height="260">
+<rect width="800" height="260" fill="#f5f6f8"/>
+<rect x="48" y="28" width="704" height="204" rx="12" fill="#ffffff" stroke="#dde1e9" stroke-width="1.5"/><rect x="70" y="46" width="44" height="28" rx="14" fill="#eef3fb"/><text x="92.0" y="66" fill="#2b6fc0" font-size="13" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="middle">流れ</text><text x="76" y="106" fill="#16213d" font-size="22" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="start">素材　→　生成　→　投稿</text><rect x="64" y="78" width="672" height="40" rx="16" fill="none" stroke="#c45c4a" stroke-width="4"/><text x="76" y="146" fill="#16213d" font-size="22" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="start">　　　　　　　→　月の数字</text>
+</svg>

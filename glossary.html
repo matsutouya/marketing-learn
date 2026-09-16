@@ -27,34 +27,34 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);
   font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
-  font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1020px;margin:0 auto;padding:0 28px}
-.wrap-narrow{max-width:660px;margin:0 auto}
-h1,h2{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:600;text-wrap:balance;letter-spacing:.01em}
-h1{font-size:clamp(28px,4.2vw,40px);line-height:1.35;margin:.3em 0 .35em}
-h2{font-size:clamp(21px,2.6vw,27px);margin:0 0 .55em;padding-bottom:.4em;border-bottom:1px solid var(--line)}
-p{margin:0 0 1.15em;color:var(--ink-2)}
-strong{color:var(--ink);font-weight:600}
-.masthead{background:var(--panel);border-bottom:1px solid var(--line);padding:52px 0 34px}
+  font-size:17px;line-height:2.12;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.wrap-narrow{max-width:740px;margin:0 auto}
+h1,h2{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:600;text-wrap:balance;letter-spacing:.02em}
+h1{font-size:clamp(30px,4.4vw,42px);line-height:1.4;margin:.35em 0 .5em}
+h2{font-size:clamp(22px,2.8vw,28px);margin:0 0 .8em;padding-bottom:.5em;border-bottom:1px solid var(--line)}
+p{margin:0 0 1.65em;color:var(--ink-2)}
+strong{color:var(--ink);font-weight:700}
+.masthead{background:var(--panel);border-bottom:1px solid var(--line);padding:56px 0 44px}
 .eyebrow{font-size:12.5px;letter-spacing:.16em;color:var(--muted);margin:0}
 .hint{font-size:12px;color:var(--muted);margin:6px 0 0}
-.lede{max-width:62ch;font-size:16.5px}
-h3{font-size:17px;margin:28px 0 4px;font-family:"Shippori Mincho",serif;font-weight:600}
+.lede{max-width:40ch;font-size:18px;line-height:2.15;margin-bottom:0}
+h3{font-size:19px;margin:40px 0 14px;font-family:"Shippori Mincho",serif;font-weight:600}
 a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
 a:hover{border-bottom-color:var(--accent)}
-.status{font-size:13.5px;color:var(--muted);margin:0 0 18px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.status{font-size:13.5px;color:var(--muted);margin:0 0 28px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .status .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;flex:none}
-nav.tabs{display:flex;gap:24px;margin:0 0 22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav.tabs{display:flex;gap:22px;margin:0 0 28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 nav.tabs a{padding:0 2px 9px;color:var(--muted);font-size:14.5px;border-bottom:2px solid transparent;margin-bottom:-1px}
 nav.tabs a:hover{color:var(--ink);border-bottom-color:var(--line)}
 nav.tabs a.on{color:var(--ink);font-weight:600;border-bottom-color:var(--accent-2)}
 nav.tabs a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-main{padding:8px 0 60px}
-section{margin:52px 0}
-.note{font-size:14.5px;color:var(--muted);margin:.7em 0 1.3em}
-.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
-table{border-collapse:collapse;width:100%;font-size:14px}
-th,td{padding:9px 13px;text-align:left;border-bottom:1px solid var(--line-2)}
+main{padding:16px 0 80px}
+section{margin:72px 0}
+.note{font-size:15px;color:var(--muted);margin:0 0 1.8em;line-height:2}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--panel);margin:0 0 2em}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line-2)}
 thead th{font-size:12.5px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--line);background:var(--panel)}
 tbody th{font-weight:600;color:var(--ink)}
 td{color:var(--ink-2)}
@@ -68,16 +68,21 @@ th[data-sort][data-dir=desc]::after{content:"↓";opacity:1;color:var(--accent)}
 th[data-sort][data-dir=asc]::after{content:"↑";opacity:1;color:var(--accent)}
 footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);max-width:660px;margin-inline:auto}
 footer p{color:var(--muted);margin:0}
-.chap{margin:34px 0}
-.chap h3{margin:18px 0 6px;font-size:15px}
-.chap .terms{margin:4px 0 10px}
-.chap .term{display:inline-block;margin:0 6px 6px 0;padding:1px 9px;border-radius:10px;font-size:12px;border:1px solid var(--line);color:var(--ink-2)}
-.chap .idea{line-height:1.9}
-.chap .nums{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 16px}
-.chap .nums p{margin:6px 0;line-height:1.8}
-.chap .nums ul,.chap .nums ol{margin:8px 0;padding-left:1.2em;color:var(--ink-2)}
-.chap .nums li{margin:4px 0;line-height:1.7}
-.chap .doit{border-left:3px solid var(--line);padding:2px 12px;margin:0 0 .7em}
+.chap{margin:64px 0}
+.chap h2{margin-bottom:1em}
+.chap h3{margin:40px 0 16px;font-size:19px}
+.chap .terms{margin:8px 0 28px}
+.chap .term{display:inline-block;margin:0 8px 10px 0;padding:4px 12px;border-radius:12px;font-size:13px;border:1px solid var(--line);color:var(--ink-2)}
+.chap .idea{line-height:2.15;margin:0 0 1.7em}
+.chap .nums{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:28px 28px 12px;margin:0 0 1.6em}
+.chap .nums p{margin:0 0 1.35em;line-height:2.1}
+.chap .nums ul,.chap .nums ol{margin:0 0 1.4em;padding-left:1.3em;color:var(--ink-2)}
+.chap .nums li{margin:0 0 .75em;line-height:2}
+.chap .doit{border-left:3px solid var(--line);padding:4px 18px;margin:0 0 1.4em;line-height:2.15}
+figure.shot{margin:0 0 2.4em}
+figure.shot img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.chap ul,.chap ol{margin:0 0 1.8em;padding-left:1.35em;color:var(--ink-2);line-height:2.1}
+.chap li{margin:0 0 .8em}
 .toc ol{line-height:2}
 .toc a{text-decoration:none}
 .glos th,.glos td{white-space:normal;vertical-align:top;line-height:1.7}
@@ -93,7 +98,7 @@ footer p{color:var(--muted);margin:0}
 </head>
 <body>
 <header class="masthead"><div class="wrap">
-<nav class="tabs" aria-label="章の切り替え"><a href="index.html">題と1行目</a><a href="trust.html">信頼の見せ方</a><a href="act.html">保存と購入</a><a href="sell.html">商品の並べ方</a><a href="channel.html">note・X・Threads</a><a href="glossary.html" class="on" aria-current="page">用語集</a></nav>
+<nav class="tabs" aria-label="章の切り替え"><a href="index.html">題と1行目</a><a href="layout.html">投稿の置き方</a><a href="trust.html">信頼の見せ方</a><a href="act.html">保存と購入</a><a href="sell.html">商品の並べ方</a><a href="channel.html">note・X・Threads</a><a href="glossary.html" class="on" aria-current="page">用語集</a></nav>
 <p class="eyebrow">サロン教材　note・X・Threads</p>
 <h1>用語集</h1>
 <p class="status"><span class="dot" aria-hidden="true"></span>最終更新 2026-09-16　/　静的な教材です。数字は入れ替わりません</p>

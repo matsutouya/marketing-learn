@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="800" height="260">
+<rect width="800" height="260" fill="#f5f6f8"/>
+<rect x="48" y="36" width="220" height="188" rx="12" fill="#ffffff" stroke="#dde1e9" stroke-width="1.5"/><text x="158" y="136" fill="#6b7793" font-size="20" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="middle">画面</text><rect x="290" y="36" width="220" height="188" rx="12" fill="#ffffff" stroke="#dde1e9" stroke-width="1.5"/><text x="400" y="136" fill="#6b7793" font-size="20" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="middle">前後</text><rect x="532" y="36" width="220" height="188" rx="12" fill="#ffffff" stroke="#dde1e9" stroke-width="1.5"/><text x="642" y="136" fill="#6b7793" font-size="20" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="middle">動画</text><rect x="48" y="36" width="704" height="188" rx="16" fill="none" stroke="#c45c4a" stroke-width="4"/>
+</svg>

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>投稿の置き方|noteとSNSの書き方</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f5f6f8; --panel:#ffffff; --ink:#16213d; --ink-2:#40506f; --muted:#6b7793;
+  --line:#dde1e9; --line-2:#eceff4; --accent:#2b6fc0; --accent-2:#a8482a; --grid:#e3e7ee;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#11151f; --panel:#171d2a; --ink:#e8ecf5; --ink-2:#b9c3d6; --muted:#8d99b3;
+    --line:#2a3244; --line-2:#212938; --accent:#5b9bea; --accent-2:#d4744c; --grid:#28303f;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#11151f; --panel:#171d2a; --ink:#e8ecf5; --ink-2:#b9c3d6; --muted:#8d99b3;
+  --line:#2a3244; --line-2:#212938; --accent:#5b9bea; --accent-2:#d4744c; --grid:#28303f;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+  font-size:17px;line-height:2.12;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.wrap-narrow{max-width:740px;margin:0 auto}
+h1,h2{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:600;text-wrap:balance;letter-spacing:.02em}
+h1{font-size:clamp(30px,4.4vw,42px);line-height:1.4;margin:.35em 0 .5em}
+h2{font-size:clamp(22px,2.8vw,28px);margin:0 0 .8em;padding-bottom:.5em;border-bottom:1px solid var(--line)}
+p{margin:0 0 1.65em;color:var(--ink-2)}
+strong{color:var(--ink);font-weight:700}
+.masthead{background:var(--panel);border-bottom:1px solid var(--line);padding:56px 0 44px}
+.eyebrow{font-size:12.5px;letter-spacing:.16em;color:var(--muted);margin:0}
+.hint{font-size:12px;color:var(--muted);margin:6px 0 0}
+.lede{max-width:40ch;font-size:18px;line-height:2.15;margin-bottom:0}
+h3{font-size:19px;margin:40px 0 14px;font-family:"Shippori Mincho",serif;font-weight:600}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.status{font-size:13.5px;color:var(--muted);margin:0 0 28px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.status .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;flex:none}
+nav.tabs{display:flex;gap:22px;margin:0 0 28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav.tabs a{padding:0 2px 9px;color:var(--muted);font-size:14.5px;border-bottom:2px solid transparent;margin-bottom:-1px}
+nav.tabs a:hover{color:var(--ink);border-bottom-color:var(--line)}
+nav.tabs a.on{color:var(--ink);font-weight:600;border-bottom-color:var(--accent-2)}
+nav.tabs a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+main{padding:16px 0 80px}
+section{margin:72px 0}
+.note{font-size:15px;color:var(--muted);margin:0 0 1.8em;line-height:2}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--panel);margin:0 0 2em}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line-2)}
+thead th{font-size:12.5px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--line);background:var(--panel)}
+tbody th{font-weight:600;color:var(--ink)}
+td{color:var(--ink-2)}
+.n{text-align:right;font-variant-numeric:tabular-nums}
+.words{white-space:normal;min-width:190px}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none}
+th[data-sort]{cursor:pointer;user-select:none;position:relative;padding-right:20px}
+th[data-sort]:hover{color:var(--ink)}
+th[data-sort]::after{content:"↕";position:absolute;right:7px;opacity:.35;font-size:11px}
+th[data-sort][data-dir=desc]::after{content:"↓";opacity:1;color:var(--accent)}
+th[data-sort][data-dir=asc]::after{content:"↑";opacity:1;color:var(--accent)}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);max-width:660px;margin-inline:auto}
+footer p{color:var(--muted);margin:0}
+.chap{margin:64px 0}
+.chap h2{margin-bottom:1em}
+.chap h3{margin:40px 0 16px;font-size:19px}
+.chap .terms{margin:8px 0 28px}
+.chap .term{display:inline-block;margin:0 8px 10px 0;padding:4px 12px;border-radius:12px;font-size:13px;border:1px solid var(--line);color:var(--ink-2)}
+.chap .idea{line-height:2.15;margin:0 0 1.7em}
+.chap .nums{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:28px 28px 12px;margin:0 0 1.6em}
+.chap .nums p{margin:0 0 1.35em;line-height:2.1}
+.chap .nums ul,.chap .nums ol{margin:0 0 1.4em;padding-left:1.3em;color:var(--ink-2)}
+.chap .nums li{margin:0 0 .75em;line-height:2}
+.chap .doit{border-left:3px solid var(--line);padding:4px 18px;margin:0 0 1.4em;line-height:2.15}
+figure.shot{margin:0 0 2.4em}
+figure.shot img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.chap ul,.chap ol{margin:0 0 1.8em;padding-left:1.35em;color:var(--ink-2);line-height:2.1}
+.chap li{margin:0 0 .8em}
+.toc ol{line-height:2}
+.toc a{text-decoration:none}
+.glos th,.glos td{white-space:normal;vertical-align:top;line-height:1.7}
+.glos th:nth-child(1){width:22%}
+.glos th:nth-child(2){width:26%}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  nav.tabs{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+</style>
+</head>
+<body>
+<header class="masthead"><div class="wrap">
+<nav class="tabs" aria-label="章の切り替え"><a href="index.html">題と1行目</a><a href="layout.html" class="on" aria-current="page">投稿の置き方</a><a href="trust.html">信頼の見せ方</a><a href="act.html">保存と購入</a><a href="sell.html">商品の並べ方</a><a href="channel.html">note・X・Threads</a><a href="glossary.html">用語集</a></nav>
+<p class="eyebrow">サロン教材　note・X・Threads</p>
+<h1>投稿の置き方</h1>
+<p class="status"><span class="dot" aria-hidden="true"></span>最終更新 2026-09-16　/　静的な教材です。数字は入れ替わりません</p>
+<p class="lede">題の型とは別に、投稿をどう切ってどう並べるかの話です。大事な語は太字にしています。図の赤丸が、見てほしい場所です。</p>
+</div></header>
+<main class="wrap">
+<section class="toc"><div class="wrap-narrow"><h2>目次</h2><ol><li><a href="#c1-ツリーの切り方">ツリーの切り方</a></li><li><a href="#c2-1投稿の中の並べ方">1投稿の中の並べ方</a></li><li><a href="#c3-反応の取り方">反応の取り方</a></li><li><a href="#c4-画像と動画の置き方">画像と動画の置き方</a></li></ol></div></section>
+<section class="chap" id="c1-ツリーの切り方"><div class="wrap-narrow"><h2>1. ツリーの切り方</h2><p class="terms"><span class="term">ツァイガルニク効果（続きが気になる心理）</span><span class="term">未完了</span><span class="term">ツリー</span></p><p>1本目を閉じてしまうと、次を開く理由が消えます。</p>
+<p><strong>続きが見えない位置で切る</strong>のが、このグループです。</p>
+<figure class="shot"><img src="img/hero-thread.svg" alt="ツリーの切り方"></figure><h3>文の途中で切る</h3><p><strong>1本目を読点で止めて</strong>、続きはリプに置きます。</p>
+<figure class="shot"><img src="img/cut-mid.svg" alt="文の途中で切る"></figure>
+<p>答えが見えないと、次を開きます。</p><h3>得だけ先に出して矢印</h3><p><strong>得だけを先に出して</strong>、中身は2本目です。</p>
+<figure class="shot"><img src="img/benefit-arrow.svg" alt="得だけ先に出して矢印"></figure>
+<p>「↓」が、続きの印です。</p><h3>対比の片側だけ出す</h3><p><strong>片側だけを1本目に置き</strong>、反対側はリプに隠します。</p>
+<figure class="shot"><img src="img/contrast-hide.svg" alt="対比の片側だけ出す"></figure>
+<p>空いている側を見たくなります。</p><h3>見出しだけ出す</h3><p><strong>箇条書きの題だけを1本目に置き</strong>、中身は後ろです。</p>
+<figure class="shot"><img src="img/list-heads.svg" alt="見出しだけ出す"></figure>
+<p>何個あるかが先に分かります。</p><h3>応用を予告して切る</h3><p><strong>今の話の延長が後ろにある</strong>と見せて切る形です。</p>
+<figure class="shot"><img src="img/apply-tease.svg" alt="応用を予告して切る"></figure>
+<p>同じ型の使い回しに見えます。</p><h3>消える予告で切る</h3><p><strong>期限で保存を急がせる</strong>形です。</p>
+<figure class="shot"><img src="img/disappear.svg" alt="消える予告で切る"></figure>
+<p>事実と違う期限は、景品表示法の線に触れます。</p><h3>連番で続きを宣言する</h3><p><strong>1/12</strong>のように、何本あるかを先に出します。</p>
+<figure class="shot"><img src="img/serial.svg" alt="連番で続きを宣言する"></figure>
+<p>最後まで辿る理由が残ります。</p></div></section><section class="chap" id="c2-1投稿の中の並べ方"><div class="wrap-narrow"><h2>2. 1投稿の中の並べ方</h2><p>1枚の中でも、見る順を作れます。</p>
+<p><strong>番号と対比と実物</strong>が、よく残る並べ方です。</p>
+<figure class="shot"><img src="img/hero-arrange.svg" alt="1投稿の中の並べ方"></figure><h3>番号リストと保存して</h3><p><strong>①②③のあとで保存を頼む</strong>形です。</p>
+<figure class="shot"><img src="img/numbered-save.svg" alt="番号リストと保存して"></figure>
+<p>後で開く理由が残るので、保存がいいねを超えることがあります。</p><h3>使えると使えないの2列</h3><p><strong>判断を代行する</strong>ので、保存されます。</p>
+<figure class="shot"><img src="img/two-col.svg" alt="使えると使えないの2列"></figure>
+<p>「結局どれ？」に一発で答えます。</p><h3>矢印の流れ図</h3><p><strong>素材から数字までを1行でつなぎます。</strong></p>
+<figure class="shot"><img src="img/arrow-flow.svg" alt="矢印の流れ図"></figure>
+<p>再現できそうに見えます。</p><h3>伏せ字</h3><p><strong>公式や数字のあとで穴を開けます。</strong></p>
+<figure class="shot"><img src="img/blank-mark.svg" alt="伏せ字"></figure>
+<p>穴だけだと開かれません。</p><h3>属性ゲート</h3><p><strong>自分のことだと感じた人だけが残ります。</strong></p>
+<figure class="shot"><img src="img/gate.svg" alt="属性ゲート"></figure>
+<p>「開設1週間以内の人だけ見て」がこの形です。</p><h3>会話のカギ括弧</h3><p><strong>説明より、他人の話として読まれます。</strong></p>
+<figure class="shot"><img src="img/dialogue.svg" alt="会話のカギ括弧"></figure>
+<p>往復が短いほど、目が追います。</p><h3>得のあと欠点</h3><p><strong>欠点があるほうが、売り込みに見えにくくなります。</strong></p>
+<figure class="shot"><img src="img/merit-demerit.svg" alt="得のあと欠点"></figure>
+<p>メリットのあとにデメリットを置きます。</p><h3>順位や段</h3><p><strong>棚として残る</strong>ので、保存向きです。</p>
+<figure class="shot"><img src="img/tier.svg" alt="順位や段"></figure>
+<p>料金はすぐ古くなります。</p><h3>本文に実物を置く</h3><p><strong>プロンプトや手順を、その投稿の中に書きます。</strong></p>
+<figure class="shot"><img src="img/prompt-body.svg" alt="本文に実物を置く"></figure>
+<p>DMで配る形より、保存理由が残ります。</p></div></section><section class="chap" id="c3-反応の取り方"><div class="wrap-narrow"><h2>3. 反応の取り方</h2><p>小さな動作を先に頼むと、拡散が付きます。</p>
+<p><strong>答えるコストが低い形</strong>が、何度も出ます。</p>
+<figure class="shot"><img src="img/hero-react.svg" alt="反応の取り方"></figure><h3>二択と番号投票</h3><p><strong>①か②かを聞きます。</strong></p>
+<figure class="shot"><img src="img/vote.svg" alt="二択と番号投票"></figure>
+<p>答えるコストが低いので、リプが付きます。</p><h3>引用で答えを聞く</h3><p><strong>引用がタイムラインに増える</strong>ので、フォロワー以外に届きます。</p>
+<figure class="shot"><img src="img/quote-ask.svg" alt="引用で答えを聞く"></figure>
+<p>「引用で教えて」がこの形です。</p><h3>当てはまる人はリポスト</h3><p><strong>小さな同意を先に取ります。</strong></p>
+<figure class="shot"><img src="img/rt-agree.svg" alt="当てはまる人はリポスト"></figure>
+<p>販売の案内より前に置く形です。</p><h3>リプ欄に続き</h3><p>よく見る釣りです。</p>
+<p><strong>中身が本体に無いと、スパム判定の元になります。</strong></p>
+<figure class="shot"><img src="img/reply-bait.svg" alt="リプ欄に続き"></figure></div></section><section class="chap" id="c4-画像と動画の置き方"><div class="wrap-narrow"><h2>4. 画像と動画の置き方</h2><p>本文を長くするより、<strong>画面を先に置く</strong>ほうが目に入ります。</p>
+<figure class="shot"><img src="img/hero-media.svg" alt="画像と動画の置き方"></figure><h3>成果スクショと一言</h3><p><strong>売上や通知の画面に、短い文だけ添えます。</strong></p>
+<figure class="shot"><img src="img/shot-one.svg" alt="成果スクショと一言"></figure><h3>ビフォーアフター2枚</h3><p><strong>変化が一目で分かります。</strong></p>
+<figure class="shot"><img src="img/before-after.svg" alt="ビフォーアフター2枚"></figure>
+<p>作業時間や画面の前後です。</p><h3>公式の引用と一言</h3><p><strong>元投稿を借りて、自分の解釈を1行乗せます。</strong></p>
+<figure class="shot"><img src="img/quote-one.svg" alt="公式の引用と一言"></figure>
+<p>翻訳だけだと保存されません。</p><h3>短い文とデモ動画</h3><p><strong>フックは本文、証拠は映像です。</strong></p>
+<figure class="shot"><img src="img/video-hook.svg" alt="短い文とデモ動画"></figure>
+<p>滞在が伸びます。</p><h3>角括弧のラベル</h3><p><strong>【保存推奨】はタイムラインでよく見ます。</strong></p>
+<figure class="shot"><img src="img/bracket-label.svg" alt="角括弧のラベル"></figure>
+<p>記事タイトルでは使えることがあります。</p>
+<p>本文の見出しでは使いません。</p></div></section>
+<footer><p>リンクを知っている人向けのサロン教材です。検索には出ません。</p></footer>
+</main>
+
+<script>
+document.querySelectorAll("th[data-sort]").forEach(function(th){
+  th.addEventListener("click", function(){
+    var table = th.closest("table");
+    var idx = Array.prototype.indexOf.call(th.parentNode.children, th);
+    var dir = th.getAttribute("data-dir") === "asc" ? "desc" : "asc";
+    table.querySelectorAll("th[data-sort]").forEach(function(x){
+      x.removeAttribute("data-dir");
+      x.setAttribute("aria-sort","none");
+    });
+    th.setAttribute("data-dir", dir);
+    th.setAttribute("aria-sort", dir === "asc" ? "ascending" : "descending");
+    var rows = Array.prototype.slice.call(table.tBodies[0].rows);
+    rows.sort(function(a,b){
+      var av = a.cells[idx].innerText.trim();
+      var bv = b.cells[idx].innerText.trim();
+      var an = av.replace(/[,％%]/g,"");
+      var bn = bv.replace(/[,％%]/g,"");
+      var na = parseFloat(an), nb = parseFloat(bn);
+      var cmp = (!isNaN(na) && !isNaN(nb)) ? na - nb : av.localeCompare(bv, "ja");
+      return dir === "asc" ? cmp : -cmp;
+    });
+    rows.forEach(function(r){ table.tBodies[0].appendChild(r); });
+  });
+});
+</script>
+
+</body>
+</html>

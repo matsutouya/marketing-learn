@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+<rect width="800" height="300" fill="#f5f6f8"/>
+<rect x="48" y="36" width="704" height="228" rx="12" fill="#ffffff" stroke="#dde1e9" stroke-width="1.5"/><rect x="70" y="54" width="57" height="28" rx="14" fill="#eef3fb"/><text x="98.5" y="74" fill="#2b6fc0" font-size="13" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="middle">1本目</text><text x="76" y="114" fill="#16213d" font-size="22" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="start">導入は思っているより</text><text x="76" y="154" fill="#16213d" font-size="22" font-weight="600" font-family="Hiragino Sans, Yu Gothic, Zen Kaku Gothic New, sans-serif" text-anchor="start">簡単で　↓</text><rect x="64" y="126" width="672" height="40" rx="16" fill="none" stroke="#c45c4a" stroke-width="4"/>
+</svg>

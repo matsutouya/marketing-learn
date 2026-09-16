@@ -27,34 +27,34 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);
   font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
-  font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1020px;margin:0 auto;padding:0 28px}
-.wrap-narrow{max-width:660px;margin:0 auto}
-h1,h2{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:600;text-wrap:balance;letter-spacing:.01em}
-h1{font-size:clamp(28px,4.2vw,40px);line-height:1.35;margin:.3em 0 .35em}
-h2{font-size:clamp(21px,2.6vw,27px);margin:0 0 .55em;padding-bottom:.4em;border-bottom:1px solid var(--line)}
-p{margin:0 0 1.15em;color:var(--ink-2)}
-strong{color:var(--ink);font-weight:600}
-.masthead{background:var(--panel);border-bottom:1px solid var(--line);padding:52px 0 34px}
+  font-size:17px;line-height:2.12;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.wrap-narrow{max-width:740px;margin:0 auto}
+h1,h2{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;font-weight:600;text-wrap:balance;letter-spacing:.02em}
+h1{font-size:clamp(30px,4.4vw,42px);line-height:1.4;margin:.35em 0 .5em}
+h2{font-size:clamp(22px,2.8vw,28px);margin:0 0 .8em;padding-bottom:.5em;border-bottom:1px solid var(--line)}
+p{margin:0 0 1.65em;color:var(--ink-2)}
+strong{color:var(--ink);font-weight:700}
+.masthead{background:var(--panel);border-bottom:1px solid var(--line);padding:56px 0 44px}
 .eyebrow{font-size:12.5px;letter-spacing:.16em;color:var(--muted);margin:0}
 .hint{font-size:12px;color:var(--muted);margin:6px 0 0}
-.lede{max-width:62ch;font-size:16.5px}
-h3{font-size:17px;margin:28px 0 4px;font-family:"Shippori Mincho",serif;font-weight:600}
+.lede{max-width:40ch;font-size:18px;line-height:2.15;margin-bottom:0}
+h3{font-size:19px;margin:40px 0 14px;font-family:"Shippori Mincho",serif;font-weight:600}
 a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
 a:hover{border-bottom-color:var(--accent)}
-.status{font-size:13.5px;color:var(--muted);margin:0 0 18px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.status{font-size:13.5px;color:var(--muted);margin:0 0 28px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .status .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;flex:none}
-nav.tabs{display:flex;gap:24px;margin:0 0 22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav.tabs{display:flex;gap:22px;margin:0 0 28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 nav.tabs a{padding:0 2px 9px;color:var(--muted);font-size:14.5px;border-bottom:2px solid transparent;margin-bottom:-1px}
 nav.tabs a:hover{color:var(--ink);border-bottom-color:var(--line)}
 nav.tabs a.on{color:var(--ink);font-weight:600;border-bottom-color:var(--accent-2)}
 nav.tabs a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-main{padding:8px 0 60px}
-section{margin:52px 0}
-.note{font-size:14.5px;color:var(--muted);margin:.7em 0 1.3em}
-.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
-table{border-collapse:collapse;width:100%;font-size:14px}
-th,td{padding:9px 13px;text-align:left;border-bottom:1px solid var(--line-2)}
+main{padding:16px 0 80px}
+section{margin:72px 0}
+.note{font-size:15px;color:var(--muted);margin:0 0 1.8em;line-height:2}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--panel);margin:0 0 2em}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line-2)}
 thead th{font-size:12.5px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--line);background:var(--panel)}
 tbody th{font-weight:600;color:var(--ink)}
 td{color:var(--ink-2)}
@@ -68,16 +68,21 @@ th[data-sort][data-dir=desc]::after{content:"↓";opacity:1;color:var(--accent)}
 th[data-sort][data-dir=asc]::after{content:"↑";opacity:1;color:var(--accent)}
 footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);max-width:660px;margin-inline:auto}
 footer p{color:var(--muted);margin:0}
-.chap{margin:34px 0}
-.chap h3{margin:18px 0 6px;font-size:15px}
-.chap .terms{margin:4px 0 10px}
-.chap .term{display:inline-block;margin:0 6px 6px 0;padding:1px 9px;border-radius:10px;font-size:12px;border:1px solid var(--line);color:var(--ink-2)}
-.chap .idea{line-height:1.9}
-.chap .nums{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 16px}
-.chap .nums p{margin:6px 0;line-height:1.8}
-.chap .nums ul,.chap .nums ol{margin:8px 0;padding-left:1.2em;color:var(--ink-2)}
-.chap .nums li{margin:4px 0;line-height:1.7}
-.chap .doit{border-left:3px solid var(--line);padding:2px 12px;margin:0 0 .7em}
+.chap{margin:64px 0}
+.chap h2{margin-bottom:1em}
+.chap h3{margin:40px 0 16px;font-size:19px}
+.chap .terms{margin:8px 0 28px}
+.chap .term{display:inline-block;margin:0 8px 10px 0;padding:4px 12px;border-radius:12px;font-size:13px;border:1px solid var(--line);color:var(--ink-2)}
+.chap .idea{line-height:2.15;margin:0 0 1.7em}
+.chap .nums{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:28px 28px 12px;margin:0 0 1.6em}
+.chap .nums p{margin:0 0 1.35em;line-height:2.1}
+.chap .nums ul,.chap .nums ol{margin:0 0 1.4em;padding-left:1.3em;color:var(--ink-2)}
+.chap .nums li{margin:0 0 .75em;line-height:2}
+.chap .doit{border-left:3px solid var(--line);padding:4px 18px;margin:0 0 1.4em;line-height:2.15}
+figure.shot{margin:0 0 2.4em}
+figure.shot img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.chap ul,.chap ol{margin:0 0 1.8em;padding-left:1.35em;color:var(--ink-2);line-height:2.1}
+.chap li{margin:0 0 .8em}
 .toc ol{line-height:2}
 .toc a{text-decoration:none}
 .glos th,.glos td{white-space:normal;vertical-align:top;line-height:1.7}
@@ -93,7 +98,7 @@ footer p{color:var(--muted);margin:0}
 </head>
 <body>
 <header class="masthead"><div class="wrap">
-<nav class="tabs" aria-label="章の切り替え"><a href="index.html" class="on" aria-current="page">題と1行目</a><a href="trust.html">信頼の見せ方</a><a href="act.html">保存と購入</a><a href="sell.html">商品の並べ方</a><a href="channel.html">note・X・Threads</a><a href="glossary.html">用語集</a></nav>
+<nav class="tabs" aria-label="章の切り替え"><a href="index.html" class="on" aria-current="page">題と1行目</a><a href="layout.html">投稿の置き方</a><a href="trust.html">信頼の見せ方</a><a href="act.html">保存と購入</a><a href="sell.html">商品の並べ方</a><a href="channel.html">note・X・Threads</a><a href="glossary.html">用語集</a></nav>
 <p class="eyebrow">サロン教材　note・X・Threads</p>
 <h1>題と1行目</h1>
 <p class="status"><span class="dot" aria-hidden="true"></span>最終更新 2026-09-16　/　静的な教材です。数字は入れ替わりません</p>
@@ -101,9 +106,16 @@ footer p{color:var(--muted);margin:0}
 </div></header>
 <main class="wrap">
 <section class="toc"><div class="wrap-narrow"><h2>目次</h2><ol><li><a href="#c1-最初の一言の書き方">最初の一言の書き方</a></li><li><a href="#c2-タイトルと1行目の型">タイトルと1行目の型</a></li></ol></div></section>
-<section class="chap" id="c1-最初の一言の書き方"><div class="wrap-narrow"><h2>1. 最初の一言の書き方</h2><p class="terms"><span class="term">フック（つかみ・引き）</span><span class="term">自己関連付け効果（自分ごと化）</span><span class="term">ツァイガルニク効果（続きが気になる心理・未完了の効果）</span><span class="term">伏せ字（〇〇だけ・答えを後に置く）</span></p><h3>考え方</h3><p class="idea">流れていく画面の中で読んでもらうには、<strong>最初の一言で読んでもらう</strong>必要があります。この仕掛けをフックと呼びます。</p>
-<p class="idea">人は、自分に関係があると感じた話を強く覚えます。これを自己関連付け効果と呼びます。「〜な人へ」という書き出しが当たります。</p>
-<p class="idea">答えが最後まで見えないと、続きが気になり続けます。これをツァイガルニク効果と呼びます。題の「たった〇〇だけ」は、答えを伏せて続きを読ませる形です。</p>
+<section class="chap" id="c1-最初の一言の書き方"><div class="wrap-narrow"><h2>1. 最初の一言の書き方</h2><p class="terms"><span class="term">フック（つかみ・引き）</span><span class="term">自己関連付け効果（自分ごと化）</span><span class="term">ツァイガルニク効果（続きが気になる心理・未完了の効果）</span><span class="term">伏せ字（〇〇だけ・答えを後に置く）</span></p><h3>考え方</h3><p class="idea">流れていく画面の中で読んでもらうには、<strong>最初の一言で読んでもらう</strong>必要があります。</p>
+<p class="idea">この仕掛けを<strong>フック</strong>と呼びます。</p>
+<figure class="shot"><img src="img/hook.svg" alt="最初の一行"></figure>
+<p class="idea">人は、自分に関係があると感じた話を強く覚えます。</p>
+<p class="idea">これを<strong>自己関連付け効果</strong>と呼びます。</p>
+<p class="idea">「〜な人へ」という書き出しが当たります。</p>
+<p class="idea">答えが最後まで見えないと、続きが気になり続けます。</p>
+<p class="idea">これを<strong>ツァイガルニク効果</strong>と呼びます。</p>
+<p class="idea">題の「たった〇〇だけ」は、答えを伏せて続きを読ませる形です。</p>
+<figure class="shot"><img src="img/blank-mark.svg" alt="伏せ字"></figure>
 <p class="idea">引っかかりは予告文で足しません。「この記事で全部わかります」は予告であってフックではありません。事実と未回収の問いを、同じ1行の中に置きます。</p><h3>実際の例</h3><div class="nums"><p>2026-09-15に集めたXの記事24本では、題の型でいいねの中央値が分かれました。数字はいいね数です。保存はブックマーク数です。</p>
 <div class="tablewrap"><table class=""><thead><tr><th class="" data-sort="1" aria-sort="none" tabindex="0">型</th><th class="n" data-sort="1" aria-sort="none" tabindex="0">本数</th><th class="n" data-sort="1" aria-sort="none" tabindex="0">いいね中央値</th><th class="" data-sort="1" aria-sort="none" tabindex="0">題の例</th></tr></thead><tbody><tr><td class="words">敷居を下げるラベル型</td><td class="n">4</td><td class="n">749</td><td class="words">【小学生でもわかる】Claude Fable 5超初心者向け完全ガイド</td></tr><tr><td class="words">伏せ字型</td><td class="n">2</td><td class="n">261</td><td class="words">Anthropic公式が推奨するプロンプトは、たった〇〇だけでした</td></tr><tr><td class="words">方法型</td><td class="n">2</td><td class="n">135</td><td class="words">動くLINEスタンプを90円で作る方法</td></tr><tr><td class="words">配布型</td><td class="n">5</td><td class="n">108</td><td class="words">【天才マーケターのナレッジ配布】Claude Code×ChatGPTライティング完全版</td></tr><tr><td class="words">実額型</td><td class="n">5</td><td class="n">61</td><td class="words">SNS未経験の初心者が、AI×noteだけで年1,000万円稼いだ方法</td></tr></tbody></table></div><p class="hint">見出しをクリックすると並べ替えできます。</p>
 <p>敷居を下げるラベル型の中央値749は、次の伏せ字型の約3倍です。1位の題はいいね1,582、保存2,651でした。保存がいいねの1.7倍で、押すより先に取っておく動きです。</p>
